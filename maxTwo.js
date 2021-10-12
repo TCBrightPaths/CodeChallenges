@@ -10,3 +10,4 @@ let newValue = new function(x=2,y=2)
     }
 }
 console.log(newValue);
+//EdreaR and TamaraC 
