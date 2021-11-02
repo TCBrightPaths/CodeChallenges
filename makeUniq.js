@@ -14,7 +14,13 @@
 
 let makeUniq = (str) => {
     let array = str.split("");
-    let filteredArr = array.filter((item, index) => array.indexOf(item) >= index).join("");
+    let filteredArr = [];
+    for (let item in array) {
+        if(!filteredArr.includes(array[item])) {
+            filteredArr.push(array[item]);
+        }
+    }
+    filteredArr = filteredArr.join("")
     console.log(filteredArr);
 }
 
