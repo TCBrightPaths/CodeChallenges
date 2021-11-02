@@ -16,4 +16,4 @@ const decoder = code => {
     return result
   }
 
-  console.log(decoder('0h2xce5ngbrdy'));
+  console.log(decoder("2fcjjm"));

@@ -1,13 +1,9 @@
 const decoder = code => {
     let splitStr = code.split('')
     let result = ''
-  
-    for (let i = 0; i < splitStr.length; i++) {
-      if (!isNaN(+splitStr[i])) {
-        i += +splitStr[i]
-      } else {
-        result += splitStr[i]
-      }
+    let cipher = splitStr[0]
+    for (let i = 1; i < splitStr.length; i++) {
+      let value = splitStr[i] + cipher;
     }
   
     return result
