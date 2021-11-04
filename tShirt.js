@@ -10,9 +10,7 @@
     //return a sorted string.
 
 let tshirtSorter = str =>{
-    str = str.trim();
-    str = str.toLowerCase();
-    str = str.split("");
+    str = str.trim().toLowerCase().split("");
 
     let sortedTShirts = str.sort().reverse().join("");
         
