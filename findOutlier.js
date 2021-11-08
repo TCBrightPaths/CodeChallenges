@@ -2,6 +2,8 @@
 //The array is either entirely comprised of odd integers or entirely comprised of even integers except for a single integer Number.
 //Write a function that takes the array as an argument and returns this “outlier” N.
 
+let ex1 = [2, 4, 0, 100, 4, 11, 2602, 36]
+let ex2 = [160, 3, 1719, 19, 11, 13, -21]
 function findOutlier (array) { 
     let evens = []
     let odds = [] 
@@ -14,15 +16,14 @@ function findOutlier (array) {
     }
 
     if (odds.length > evens.length) {
-        console.log(evens)
+        return evens
     } else {
-        console.log(odds)
+        return odds
     }
             
 }
 
-findOutlier([2, 4, 0, 100, 4, 11, 2602, 36])
+let outlier = findOutlier(ex2);
 
-//[2, 4, 0, 100, 4, 11, 2602, 36] Should return: 11 (the only odd number)
+console.log(outlier);
 
-//[160, 3, 1719, 19, 11, 13, -21] Should return: 160 (the only even number)
