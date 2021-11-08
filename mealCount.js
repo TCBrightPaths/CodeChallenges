@@ -24,7 +24,3 @@ function ObjectLength( object ) {
 };
 
 ObjectLength(potLuck);
-
-// let mealCount = () => console.log(potLuck.data)
-
-// mealCount();
