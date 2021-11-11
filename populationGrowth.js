@@ -19,14 +19,13 @@
     //console.log(n)
 
 let nbYear = (p0, percent, aug, p) => {
-    //let year2year = []
+    let year2year = []
     percent = (percent/100) + 1
-    let n = 0
     while (p0 <= p) {
         p0 = (p0 * percent + aug);
-        n++
+        year2year.push(p0)
     }
-    //let n = year2year[year2year.length-1]
+    let n = year2year.length
     console.log(n)
 }
 
