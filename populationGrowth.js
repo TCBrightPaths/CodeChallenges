@@ -23,7 +23,7 @@ let nbYear = (p0, percent, aug, p) => {
     percent = (percent/100) + 1
     let n = 0
     while (p0 <= p) {
-        p0 += (p0 * percent + aug);
+        p0 = (p0 * percent + aug);
         n++
     }
     //let n = year2year[year2year.length-1]
