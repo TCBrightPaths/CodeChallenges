@@ -4,9 +4,8 @@ function buildTower (n) {
     for (i = 0; i < n; i++) {
         tower.push(floor)
         floor = floor.trimEnd() + "**  "
-        
-        
     }
+    tower = tower.join('\n')
     console.log(tower)
 }
 
