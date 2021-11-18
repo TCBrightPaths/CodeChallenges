@@ -8,11 +8,11 @@
 
 const sortProduct = (array) => {
     let products = []
-    for (let i in array)
-        value = array[i] * i
+    for (i = 0; i < array.length; i++) {
+        value = array[i] * (i+1)
         products.push(value)
-
-    //return the sorted now not empty array in ascending order
+    }
+    products = products.sort((a, b) => a - b)
     console.log(products)
 }
 
