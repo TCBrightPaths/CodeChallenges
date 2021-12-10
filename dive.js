@@ -1,6 +1,6 @@
 //horizontal position starts at 0
 //depth starts at 0
-//let x and y variables control increment
+//let num control increment
 //forward increments horizontal position
 //up decrements depth
 //down increments depth
@@ -21,7 +21,27 @@
 //write another function that takes in an (object array)
     //calls above function on each value
 
+let hposition = 0
+let depth = 0
 const dive = (dir, num) => {
-    switch()
+    switch(dir) {
+        case 'forward':
+            hposition += num
+            break;
+        case 'up':
+            depth -= num
+            break;
+        case 'down':
+            depth += num
+            break;
+        default:
+            console.log('That is not a valid direction.')
+            break;
+    }
+    return hposition * depth
 } 
+
+const finalDepth = () => {
+    
+}
     
